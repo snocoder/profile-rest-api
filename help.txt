@@ -1,1 +1,8 @@
 python manage.py runserver 0.0.0.0:8000
+
+source virtualenvironment/profile-test-api/bin/activate
+
+deactivate
+
+python manage.py makemigrations profiles_api    ###To make migration for model
+python manage.py migrate
